@@ -143,7 +143,10 @@ pip install -r requirements.txt
 
 Starte das Training mit folgendem Befehl:
 
+
+```
 python train.py --img 640 --batch 16 --epochs 50 --data dataset/data.yaml --weights yolov5s.pt
+```
 
 • --img: Bildgröße (640 ist Standard).
 
