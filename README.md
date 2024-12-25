@@ -51,9 +51,10 @@ Hinweis: Roboflow aktualisiert die Splits basierend auf den neuen Prozentwerten.
 ### 3. Export der Daten
    
 Nach dem Setzen der Splits kannst du die Daten exportieren:
-	1.	Gehe zu „Versions“ und wähle die gewünschte Version.
-	2.	Klicke auf „Generate“ und wähle das YOLOv5-Format.
-	3.	Lade die ZIP-Datei herunter.
+
+1. Gehe zu „Versions“ und wähle die gewünschte Version.
+2. Klicke auf „Generate“ und wähle das YOLOv5-Format.
+3. Lade die ZIP-Datei herunter.
 
 Die heruntergeladene Datei enthält dann die Daten strukturiert in:
 
