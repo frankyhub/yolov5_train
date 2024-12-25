@@ -111,7 +111,8 @@ val: dataset/val/images
 
 nc: 2  # Anzahl der Klassen
 
-names: ['class1', 'class2']  # Ersetze mit deinen Klassennamen
+names: ['class1', 'class2']    # Ersetze classx mit deinen Klassennamen
+
 
 • train: Pfad zu den Trainingsbildern.
 
