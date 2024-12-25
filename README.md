@@ -14,7 +14,8 @@ In Roboflow kannst du den Validation Split (val) erstellen, indem du die Daten w
 
 • Stelle sicher, dass Labels korrekt zugeordnet sind.
 
-3. Daten aufteilen (Train/Val/Test-Split erstellen)
+
+2. Daten aufteilen (Train/Val/Test-Split erstellen)
 
 Roboflow ermöglicht es, deine Daten in Trainings-, Validierungs- und Testdaten aufzuteilen. Das kannst du folgendermaßen machen:
 
@@ -81,7 +82,7 @@ Stelle sicher, dass:
 
 • Lade die ZIP-Datei herunter, die Bilder und Annotations enthält.
 
-3. Struktur des Datasets:
+2. Struktur des Datasets:
 
 Die Datenstruktur für YOLOv5 sollte wie folgt aussehen:
 
@@ -169,14 +170,14 @@ Gewichte (Weights) wie z. B. best.pt oder last.pt sind gespeicherte Modelle, die
 
 • Du kannst best.pt verwenden, um das Modell für Inferenz zu nutzen, da es die bestmögliche Leistung bietet.
 
-3. last.pt
+2. last.pt
 • Dies sind die Gewichte des Modells nach dem letzten Trainingsepoch.
 
 • Es kann sein, dass diese nicht die beste Leistung repräsentieren, wenn das Modell während des Trainings zu stark angepasst wurde (Overfitting).
 
 • Diese Datei ist nützlich, wenn du ein Training fortsetzen oder debuggen möchtest.
 
-5. Wofür werden die Gewichte verwendet?
+3. Wofür werden die Gewichte verwendet?
 
 3.1. Für die Inferenz (Vorhersagen)
 
