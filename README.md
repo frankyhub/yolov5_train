@@ -38,13 +38,22 @@ Falls du die Splits nachträglich ändern möchtest:
 Die heruntergeladene Datei enthält dann die Daten strukturiert in:
 
 train/
+
   images/
+  
   labels/
+  
 val/
+
   images/
+  
   labels/
+
+  
 test/
+
   images/
+  
   labels/
 
 4. Überprüfung der Splits
@@ -70,24 +79,43 @@ Stelle sicher, dass:
 Die Datenstruktur für YOLOv5 sollte wie folgt aussehen:
 
 dataset/
+
 ├── train/
+
 │   ├── images/
+
 │   │   ├── img1.jpg
+
 │   │   ├── img2.jpg
+
 │   │   └── ...
+
 │   ├── labels/
+
 │       ├── img1.txt
+
 │       ├── img2.txt
+
 │       └── ...
+
 ├── val/
+
 │   ├── images/
+
 │   │   ├── img1.jpg
+
 │   │   ├── img2.jpg
+
 │       └── ...
+
 │   ├── labels/
+
 │       ├── img1.txt
+
 │       ├── img2.txt
+
 │       └── ...
+
 data.yaml
 
 3. Daten korrekt einbinden:
@@ -106,12 +134,12 @@ val: dataset/val/images
 nc: 2  # Anzahl der Klassen
 names: ['class1', 'class2']  # Ersetze mit deinen Klassennamen
 
-	•	train: Pfad zu den Trainingsbildern.
-	•	val: Pfad zu den Validierungsbildern.
-	•	nc: Anzahl der Klassen.
-	•	names: Liste der Klassennamen.
+• train: Pfad zu den Trainingsbildern.
+• val: Pfad zu den Validierungsbildern.
+• nc: Anzahl der Klassen.
+• names: Liste der Klassennamen.
 
-	Hinweis: Roboflow exportiert oft die Datei data.yaml automatisch. Überprüfe, ob sie korrekt ist.
+Hinweis: Roboflow exportiert oft die Datei data.yaml automatisch. Überprüfe, ob sie korrekt ist.
 
 4. YOLOv5-Training starten:
 
@@ -120,6 +148,7 @@ names: ['class1', 'class2']  # Ersetze mit deinen Klassennamen
 Falls noch nicht geschehen, klone das YOLOv5-Repository:
 
 git clone https://github.com/ultralytics/yolov5.git
+
 cd yolov5
 
 4.2. Abhängigkeiten installieren
