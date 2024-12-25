@@ -27,7 +27,7 @@ Falls du die Splits nachträglich ändern möchtest:
 	•	Wähle „Settings“ > „Dataset Splits“.
 	•	Passe die Prozentsätze für Train/Val/Test an.
 
-	Hinweis: Roboflow aktualisiert die Splits basierend auf den neuen Prozentwerten. Bereits existierende Splits werden überschrieben.
+Hinweis: Roboflow aktualisiert die Splits basierend auf den neuen Prozentwerten. Bereits existierende Splits werden überschrieben.
 
 3. Export der Daten
 	•	Nach dem Setzen der Splits kannst du die Daten exportieren:
@@ -64,39 +64,22 @@ Die Datenstruktur für YOLOv5 sollte wie folgt aussehen:
 dataset/
 
 ├── train/
-
 │   ├── images/
-
 │   │   ├── img1.jpg
-
 │   │   ├── img2.jpg
-
 │   │   └── ...
-
 │   ├── labels/
-
 │       ├── img1.txt
-
 │       ├── img2.txt
-
 │       └── ...
-
 ├── val/
-
 │   ├── images/
-
 │   │   ├── img1.jpg
-
 │   │   ├── img2.jpg
-
 │       └── ...
-
 │   ├── labels/
-
 │       ├── img1.txt
-
 │       ├── img2.txt
-
 │       └── ...
 
 data.yaml
