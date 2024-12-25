@@ -2,7 +2,7 @@
 
 ## Roboflow train
 
-In Roboflow kannst du den Validation Split (val) erstellen, indem du die Daten während des Projekterstellungs- oder Exportprozesses in Trainings-, Validierungs- und Testdaten unterteilst. Hier ist eine Schritt-für-Schritt-Anleitung:
+In Roboflow kannst du Bilder hochladen, labeln und exportieren.
 
 ### 1. Daten hochladen
    
@@ -61,7 +61,6 @@ Die heruntergeladene Datei enthält dann die Daten strukturiert in:
 
 ### 4. Überprüfung der Splits
 
-Stelle sicher, dass:
 • Train: Enthält den Großteil der Daten (für das Training).
 
 • Validation (Val): Enthält Daten, die während des Trainings verwendet werden, um die Leistung zu überprüfen.
