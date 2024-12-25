@@ -37,24 +37,7 @@ Falls du die Splits nachträglich ändern möchtest:
 
 Die heruntergeladene Datei enthält dann die Daten strukturiert in:
 
-train/
-
-  images/
-  
-  labels/
-  
-val/
-
-  images/
-  
-  labels/
-
-  
-test/
-
-  images/
-  
-  labels/
+![Bild](pic/datenstruktur.png)
 
 4. Überprüfung der Splits
 
