@@ -1,5 +1,7 @@
 # yolov5_train
 
+## Roboflow train
+
 In Roboflow kannst du den Validation Split (val) erstellen, indem du die Daten während des Projekterstellungs- oder Exportprozesses in Trainings-, Validierungs- und Testdaten unterteilst. Hier ist eine Schritt-für-Schritt-Anleitung:
 
 1. Daten hochladen
@@ -52,6 +54,8 @@ Stelle sicher, dass:
 
 ----
 
+## Roboflow Export
+
 1. Export aus Roboflow:
 	•	Stelle sicher, dass der Export aus Roboflow im YOLOv5-Format erfolgt.
 	•	Wähle beim Export „YOLOv5 PyTorch“ aus.
@@ -61,28 +65,8 @@ Stelle sicher, dass:
 
 Die Datenstruktur für YOLOv5 sollte wie folgt aussehen:
 
-dataset/
+![Bild](pic/datenstruktur.png)
 
-├── train/
-│   ├── images/
-│   │   ├── img1.jpg
-│   │   ├── img2.jpg
-│   │   └── ...
-│   ├── labels/
-│       ├── img1.txt
-│       ├── img2.txt
-│       └── ...
-├── val/
-│   ├── images/
-│   │   ├── img1.jpg
-│   │   ├── img2.jpg
-│       └── ...
-│   ├── labels/
-│       ├── img1.txt
-│       ├── img2.txt
-│       └── ...
-
-data.yaml
 
 3. Daten korrekt einbinden:
 
@@ -144,7 +128,9 @@ Nach Abschluss des Trainings findest du die Ergebnisse im Ordner runs/train/exp.
 
  ---
 
- Gewichte (Weights) wie z. B. best.pt oder last.pt sind gespeicherte Modelle, die die Parameter (Gewichte und Biases) eines neuronalen Netzes enthalten. Sie repräsentieren den Zustand des Modells nach dem Training. Im Kontext von YOLOv5 haben diese Dateien folgende Bedeutung:
+ ## *.pt -Dateien
+
+Gewichte (Weights) wie z. B. best.pt oder last.pt sind gespeicherte Modelle, die die Parameter (Gewichte und Biases) eines neuronalen Netzes enthalten. Sie repräsentieren den Zustand des Modells nach dem Training. Im Kontext von YOLOv5 haben diese Dateien folgende Bedeutung:
 
 1. best.pt
 	•	Dies sind die besten Gewichte, die während des Trainings erreicht wurden.
