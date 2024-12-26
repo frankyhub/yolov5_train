@@ -279,6 +279,37 @@ path = model.export(format="onnx")  # return path to exported model
 - Schätzung der Körperhaltung: Erkennung und Verfolgung von Schlüsselpunkten auf menschlichen Körpern.
 - Orientierte Objekterkennung (OBB): Erkennung von Objekten mit Drehung für höhere Präzision.
 
+
+## coco
+In **YOLOv11** (oder in den vorherigen Versionen wie YOLOv4, YOLOv5), bezieht sich der Begriff **COCO** auf den **COCO-Datensatz (Common Objects in Context)**, der häufig für das Training und Testen von Objekterkennungsmodellen verwendet wird. Der COCO-Datensatz enthält eine große Anzahl von annotierten Bildern mit verschiedenen Objekten in realen Kontexten, was bedeutet, dass Objekte in verschiedenen Szenarien und Positionen erscheinen.
+
+Die Aufgabe von **COCO** im Kontext von YOLO (You Only Look Once) ist in erster Linie, als **Trainings- und Testdatensatz** zu dienen. Konkret hat COCO die folgenden Aufgaben:
+
+1. **Bereitstellung von Trainings- und Testdaten**: Der COCO-Datensatz besteht aus Millionen von Bildern und verschiedenen Objektkategorien, die genutzt werden, um Modelle wie YOLO zu trainieren. Diese Bilder enthalten unterschiedliche Objekte (z.B. Personen, Autos, Tiere) in verschiedenen Szenarien und Kontexten.
+
+2. **Evaluation des Modells**: COCO bietet eine standardisierte Möglichkeit, die Leistung von Objekterkennungsmodellen wie YOLO zu bewerten. Es stellt Metriken wie **mAP (mean Average Precision)** zur Verfügung, die die Genauigkeit des Modells bei der Objekterkennung messen.
+
+3. **Unterstützung bei der Modellentwicklung**: COCO ist eine wichtige Referenz, um die Fortschritte in der Objekterkennung und den allgemeinen Fortschritt von Computer Vision-Modellen wie YOLO zu verfolgen. Durch den Einsatz von COCO können Entwickler sicherstellen, dass ihre Modelle auf realistische Szenarien getestet werden.
+
+Insgesamt wird COCO verwendet, um YOLO-Modelle auf eine breite und vielfältige Menge von Objekten und Szenarien zu trainieren, was deren Leistung und Robustheit in realen Anwendungen verbessert.
+
+## yolo
+**YOLO** steht für **"You Only Look Once"**. Es handelt sich um ein beliebtes und effizientes Verfahren zur **Objekterkennung** in Computer Vision. Der Name spiegelt das Hauptprinzip des Modells wider: Statt ein Bild in mehreren Schritten oder Teilen zu analysieren, erfolgt die Objekterkennung in **einem einzigen Durchgang** (also "once"), was zu einer deutlich schnelleren Verarbeitung führt.
+
+### Kerneigenschaften von YOLO:
+1. **Schnelligkeit**: YOLO kann in Echtzeit Objekte erkennen, was es besonders für Anwendungen mit niedriger Latenz und in Echtzeit (z. B. Videoüberwachung, autonomes Fahren) geeignet macht.
+   
+2. **End-to-End-Erkennung**: YOLO betrachtet das Bild als Ganzes und teilt es in ein Gitter auf, wobei jedes Gitter eine Bounding Box und eine Wahrscheinlichkeit für bestimmte Objekte vorhersagt. Dies bedeutet, dass das Modell in einem Schritt sowohl die Objekte als auch deren Positionen und Klassifikationen vorhersagt.
+
+3. **Genauigkeit**: Obwohl YOLO ursprünglich nicht so präzise wie andere Modelle war (z. B. Faster R-CNN), hat sich die Genauigkeit in neueren Versionen (wie YOLOv3, YOLOv4, YOLOv5) stark verbessert, sodass es eine gute Balance zwischen Geschwindigkeit und Genauigkeit bietet.
+
+### Funktionsweise:
+- Das Bild wird in ein Gitter unterteilt.
+- Jede Zelle im Gitter prediziert mehrere Bounding Boxes und deren Wahrscheinlichkeit, dass ein Objekt darin enthalten ist.
+- Es wird eine einzige Vorhersage für jedes Objekt gemacht, die Position und Klassifikation gleichzeitig enthält.
+
+YOLO hat eine Reihe von Versionen, die im Laufe der Jahre weiterentwickelt wurden, um sowohl die Leistung als auch die Genauigkeit zu verbessern.
+
 ---
 ---
 
