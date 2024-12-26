@@ -227,6 +227,14 @@ Zusammengefasst:
 • Beide können für Vorhersagen oder Fine-Tuning verwendet werden.
 
 ---
+
+Wenn noch nicht installiert, installiere das winget-Tool und gib den Befehl in die Eingabeaufforderung oder PowerShell ein:
+
+```
+winget install --id Git.Git -e --source winget
+```
+
+---
 ---
 
 
