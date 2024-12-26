@@ -234,6 +234,8 @@ Wenn noch nicht installiert, installiere das winget-Tool und gib den Befehl in d
 winget install --id Git.Git -e --source winget
 ```
 
+[Hilfe_winget](https://learn.microsoft.com/de-de/windows/package-manager/winget)
+
 ---
 ---
 
