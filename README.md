@@ -273,6 +273,12 @@ path = model.export(format="onnx")  # return path to exported model
 | YOLO11-obb       | yolo11n-cls.pt yolo11s-cls.pt yolo11m-cls.pt yolo11l-cls.pt yolo11x-cls.pt        | Klassifizierung       |
 | -------- | -------- | -------- |
 
+- Objekt-Erkennung: Identifizierung und Lokalisierung von Objekten innerhalb eines Bildes.
+- Instanz-Segmentierung: Erkennen von Objekten und Abgrenzen ihrer Grenzen.
+- Bildklassifizierung: Einteilung von Bildern in vordefinierte Klassen.
+- Schätzung der Körperhaltung: Erkennung und Verfolgung von Schlüsselpunkten auf menschlichen Körpern.
+- Orientierte Objekterkennung (OBB): Erkennung von Objekten mit Drehung für höhere Präzision.
+
 ---
 ---
 
