@@ -181,63 +181,99 @@ Nach Abschluss des Trainings findest du die Ergebnisse im Ordner runs/train/exp.
 
 ```
 python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolov5s.pt
+
 ```
 
 startet das Training eines YOLOv5-Modells mit spezifischen Parametern. Hier ist eine genaue Aufschlüsselung der Argumente und ihrer Bedeutung:
 
 1. python train.py
-	•	Startet das Trainingsskript von YOLOv5.
-	•	Das Skript steuert den gesamten Trainingsprozess: Laden der Daten, Initialisieren des Modells, Training, Validierung und Speichern der Ergebnisse.
+   
+• Startet das Trainingsskript von YOLOv5.
+
+• Das Skript steuert den gesamten Trainingsprozess: Laden der Daten, Initialisieren des Modells, Training, Validierung und Speichern der Ergebnisse.
 
 2. --img 640
-	•	Bildgröße (in Pixeln), die für das Modell während des Trainings verwendet wird.
-	•	Standardmäßig wird YOLOv5 mit quadratischen Bildern trainiert.
-	•	Größere Bilder (z. B. 640x640) können zu besserer Erkennung führen, benötigen aber mehr Speicher und Rechenleistung.
-	•	Kleinere Bilder (z. B. 320x320) reduzieren den Speicherverbrauch, können aber die Genauigkeit beeinträchtigen.
+
+• Bildgröße (in Pixeln), die für das Modell während des Trainings verwendet wird.
+
+• Standardmäßig wird YOLOv5 mit quadratischen Bildern trainiert.
+
+• Größere Bilder (z. B. 640x640) können zu besserer Erkennung führen, benötigen aber mehr Speicher und Rechenleistung.
+
+• Kleinere Bilder (z. B. 320x320) reduzieren den Speicherverbrauch, können aber die Genauigkeit beeinträchtigen.
+
 
 3. --batch 16
-	•	Batch-Größe: Anzahl der Bilder, die in einem Schritt durch das Modell verarbeitet werden.
-	•	Eine höhere Batch-Größe nutzt die GPU effizienter, erfordert aber mehr Speicher.
-	•	Beispiel: Bei einer GPU mit begrenztem Speicher solltest du die Batch-Größe verringern, z. B. auf 8.
+   
+• Batch-Größe: Anzahl der Bilder, die in einem Schritt durch das Modell verarbeitet werden.
+
+• Eine höhere Batch-Größe nutzt die GPU effizienter, erfordert aber mehr Speicher.
+
+• Beispiel: Bei einer GPU mit begrenztem Speicher solltest du die Batch-Größe verringern, z. B. auf 8.
 
 4. --epochs 50
-	•	Anzahl der Trainingsepochen: Eine Epoche bedeutet, dass das Modell den gesamten Trainingsdatensatz einmal durchlaufen hat.
-	•	Mehr Epochen ermöglichen dem Modell, die Daten besser zu lernen, können aber zu Überanpassung (Overfitting) führen, wenn es zu viele sind.
-	•	Beispiel:
-	•	10-50 Epochen sind oft ausreichend für kleine bis mittlere Datensätze.
-	•	Große Datensätze können mehr Epochen benötigen.
+   
+• Anzahl der Trainingsepochen: Eine Epoche bedeutet, dass das Modell den gesamten Trainingsdatensatz einmal durchlaufen hat.
+
+• Mehr Epochen ermöglichen dem Modell, die Daten besser zu lernen, können aber zu Überanpassung (Overfitting) führen, wenn es zu viele sind.
+
+ Beispiel:
+ 
+• 10-50 Epochen sind oft ausreichend für kleine bis mittlere Datensätze.
+
+• Große Datensätze können mehr Epochen benötigen.
 
 5. --data data.yaml
-	•	Gibt die Konfigurationsdatei für die Daten an.
-	•	Die Datei data.yaml enthält:
-	•	Pfade zu den Trainings- und Validierungsdaten.
-	•	Anzahl der Klassen (nc).
-	•	Namen der Klassen (names).
-	•	Beispielinhalt von data.yaml:
+   
+• Gibt die Konfigurationsdatei für die Daten an.
+
+• Die Datei data.yaml enthält:
+
+• Pfade zu den Trainings- und Validierungsdaten.
+
+• Anzahl der Klassen (nc).
+
+• Namen der Klassen (names).
+
+• Beispielinhalt von data.yaml:
 
 train: path/to/train/images
+
 val: path/to/val/images
+
 nc: 2
+
 names: ['cat', 'dog']
 
-6. --weights yolov5s.pt
-	•	Vortrainierte Gewichte, die als Ausgangspunkt für das Training verwendet werden.
-	•	yolov5s.pt ist das kleinste und schnellste Modell von YOLOv5, das auf dem COCO-Datensatz vortrainiert wurde.
-	•	Vorteil:
-	•	Durch Transfer Learning nutzt das Modell die bereits erlernten Features, wodurch das Training schneller und effizienter wird.
-	•	Ohne dieses Argument startet das Training mit zufälligen Gewichten (von Grund auf neu).
+5. --weights yolov5s.pt
+   
+• Vortrainierte Gewichte, die als Ausgangspunkt für das Training verwendet werden.
+
+• yolov5s.pt ist das kleinste und schnellste Modell von YOLOv5, das auf dem COCO-Datensatz vortrainiert wurde.
+
+Vorteil:
+
+• Durch Transfer Learning nutzt das Modell die bereits erlernten Features, wodurch das Training schneller und effizienter wird.
+
+• Ohne dieses Argument startet das Training mit zufälligen Gewichten (von Grund auf neu).
 
 Zusammengefasst bewirkt der Befehl:
-	1.	Lädt das vortrainierte YOLOv5s-Modell (yolov5s.pt).
-	2.	Verarbeitet Bilder mit einer Größe von 640x640 in Batches von 16.
-	3.	Führt das Training für 50 Epochen durch.
-	4.	Verwendet die in data.yaml definierten Daten und Klassen.
-	5.	Speichert die Ergebnisse (z. B. Gewichte, Trainingsmetriken) im Ordner runs/train/exp.
+
+1.	Lädt das vortrainierte YOLOv5s-Modell (yolov5s.pt).
+
+2.	Verarbeitet Bilder mit einer Größe von 640x640 in Batches von 16.
+	
+3.	Führt das Training für 50 Epochen durch.
+	
+4.	Verwendet die in data.yaml definierten Daten und Klassen.
+	
+5.	Speichert die Ergebnisse (z. B. Gewichte, Trainingsmetriken) im Ordner runs/train/exp.
 
 Die Ergebnisse enthalten:
-	•	best.pt: Das Modell mit der besten Validierungsleistung.
-	•	last.pt: Das Modell nach der letzten Epoche.
-	•	Trainingsmetriken: z. B. Verlustkurven und mAP.
+
+• best.pt: Das Modell mit der besten Validierungsleistung.
+• last.pt: Das Modell nach der letzten Epoche.
+• Trainingsmetriken: z. B. Verlustkurven und mAP.
 
 
 --- 
