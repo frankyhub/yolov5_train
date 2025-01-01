@@ -21,11 +21,6 @@
 ![Bild](/pic/ServusZukunft.png)
 
 
-
-```
-python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolov5s.pt
-```
-
 ## Roboflow train
 
 In Roboflow kannst du Bilder hochladen, labeln und exportieren.
