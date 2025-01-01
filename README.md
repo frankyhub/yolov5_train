@@ -1,7 +1,7 @@
 <a name="oben"></a>
 
 
-![Bild](/pic/ServusZukunft.png)
+
 
 
 <div align="center">
@@ -16,6 +16,11 @@
 
 
 # yolov5_train
+
+
+![Bild](/pic/ServusZukunft.png)
+
+
 
 ```
 python train.py --img 640 --batch 16 --epochs 50 --data data.yaml --weights yolov5s.pt
