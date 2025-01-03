@@ -20,6 +20,8 @@
 
 ![Bild](/pic/ServusZukunft.png)
 
+![Bild](/pic/geo.png)
+
 
 ## Roboflow train
 
@@ -432,6 +434,16 @@ Insgesamt wird COCO verwendet, um YOLO-Modelle auf eine breite und vielfältige 
 - Es wird eine einzige Vorhersage für jedes Objekt gemacht, die Position und Klassifikation gleichzeitig enthält.
 
 YOLO hat eine Reihe von Versionen, die im Laufe der Jahre weiterentwickelt wurden, um sowohl die Leistung als auch die Genauigkeit zu verbessern.
+
+---
+
+## Mittlere durchschnittliche Genauigkeit (mAP)
+
+Die mittlere durchschnittliche Genauigkeit (Mean Average Precision, mAP) wird verwendet, um die Leistung von Computer-Vision-Modellen zu messen. 
+mAP entspricht dem Durchschnitt der Metrik "Durchschnittliche Genauigkeit" für alle Klassen in einem Modell. Sie können mAP verwenden, um sowohl 
+verschiedene Modelle für dieselbe Aufgabe als auch verschiedene Versionen desselben Modells zu vergleichen. mAP wird zwischen 0 und 1 gemessen.
+
+![Bild](/pic/map.png)
 
 ---
 ---
